@@ -39,9 +39,11 @@ class UI {
   // Delete movie list
   deleteList(target) {
     if(target.className === 'delete') {
-      confirm('リストから削除しますか？');
-      target.parentElement.parentElement.remove();
-      // alert('リストから削除されました。');
+      const yesdelete = confirm('リストから削除しますか？');
+      if(yesdelete === true) {
+        target.parentElement.parentElement.remove();
+        // alert('リストから削除されました。');
+      }
     }
   }
 }
