@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <title>Movie Log</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Movie Log</h1>
+
+    <form id="movie-form">
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" class="form-control" id="title">
+      </div>
+      <div class="form-group">
+        <label for="director">Director</label>
+        <input type="text" class="form-control" id="director">
+      </div>
+      <div class="form-group">
+        <label for="When did you watch?">When did you watch?</label>
+        <input type="date" class="form-control" id="whenWatch">
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary px-5">Add</button>
+      </div>
+    </form>
+
+    <table class="movie-list table table-hover mt-5">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Director</th>
+          <th>When did you watch?</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="book-list">
+          <!-- <tr>
+            <td>aaaa</td>
+            <td>aaaa</td>
+            <td>aaaa</td>
+            <td><a href="#" class="delete">X</a></td>
+          </tr> -->
+      </tbody>
+
+    </table>
+
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
